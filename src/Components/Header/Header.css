@@ -1,0 +1,96 @@
+.header-container {
+  height: 100vh;
+  width: 15vw;
+  background: #6b6b7e;
+  background-image: linear-gradient(to bottom right, #6b6b7e, #2d2d38);
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  position: fixed;
+  right: 0;
+  padding-right: 2%;
+  padding-left: 2%;
+  overflow: hidden;
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8vw; }
+
+.navbar-flavor {
+  opacity: 1;
+  transition: 0.5s;
+  height: 0;
+  width: 100%; }
+
+.navbar-links {
+  height: 100%;
+  text-align: center;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around; }
+  .navbar-links div {
+    cursor: pointer;
+    text-shadow: none;
+    transition: all 0.2s ease-in-out; }
+  .navbar-links div:hover {
+    transform: scale(1.09); }
+
+#glowing {
+  text-shadow: 0 0 0.8em lightgray, 0 0 2em white;
+  transition: 0.2s all ease-in-out; }
+
+#glowing:hover {
+  transform: none;
+  cursor: default; }
+
+.menu-bottom {
+  flex: 6;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around; }
+
+@media (max-width: 600px) {
+  .hidden {
+    opacity: 0;
+    height: 0%;
+    transition: 0.5s;
+    padding: 0; }
+  .menu-top {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12vh; }
+  .menu-lines .menuline1, .menu-lines .menuline2, .menu-lines .menuline3 {
+    width: 50px;
+    height: 4px;
+    background: white;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    transition: 0.9s; }
+  .menu-lines .menux1, .menu-lines .menux2, .menu-lines .menux3 {
+    width: 50px;
+    height: 4px;
+    background: white;
+    box-shadow: none;
+    z-index: 99;
+    transition: 0.5s; }
+  .menu-lines {
+    width: 50px;
+    height: 40px;
+    padding-top: 5px;
+    cursor: pointer;
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center; }
+    .menu-lines .menux1 {
+      transform: translate(0, 4px) rotate(-45deg); }
+    .menu-lines .menux2 {
+      opacity: 0;
+      width: 0; }
+    .menu-lines .menux3 {
+      transform: translate(0, -4px) rotate(45deg); } }
