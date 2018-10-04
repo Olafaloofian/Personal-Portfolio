@@ -29,22 +29,6 @@ class Home extends Component {
             this.setState({skills: skills[index + 1]})
     }
 
-    transitionToBottom = () => {
-        this.props.context.methods.toggleBottomStatus()
-        this.setState({ topOrBottom: 'bottom', downArrowTransition: 'invisible' })
-        setTimeout(() => {
-            this.setState({upArrowTransition: ''})
-        }, 2000)
-    }
-
-    transitionToTop = () => {
-        this.props.context.methods.toggleBottomStatus()
-        this.setState({ topOrBottom: 'top', upArrowTransition: 'invisible' })
-        setTimeout(() => {
-            this.setState({downArrowTransition: ''})
-        }, 2000)
-    }
-
     componentWillUnmount() {
         clearInterval(this.skillSwitch)
     }
@@ -72,7 +56,7 @@ class Home extends Component {
                             </div>
                         </div>
                         <div className="flex-container flex-bottom-center">
-                            <div className={`front zoom down-arrows ${this.props.context.isAtBottom && 'invisible'}`} onClick={() => this.transitionToBottom()}>
+                            <div className={`front zoom down-arrows ${this.props.context.isAtBottom && 'invisible'}`} onClick={() => this.props.context.methods.toggleBottomStatus()}>
                                 <div>
                                     Click for More
                                 </div>
@@ -97,8 +81,8 @@ class Home extends Component {
                     </div>
                 </div>
 
-                <div className={`${this.props.context.isAtBottom ? 'bottom' : 'top'} home-lower`} ref={ re => { this.homeLower = re } }>
-                    <div className={`up-arrows zoom ${!this.props.context.isAtBottom && 'invisible'}`} onClick={() => this.transitionToTop()}>
+                <div className={`${this.props.context.isAtBottom ? 'bottom' : 'top'} home-lower`}>
+                    <div className={`up-arrows zoom ${!this.props.context.isAtBottom && 'invisible'}`} onClick={() => this.props.context.methods.toggleBottomStatus()}>
                         <svg className="arrows">
                             <path d="M0 30 L30 0 L60 30"></path>
                             <path d="M0 50 L30 20 L60 50"></path>
