@@ -1,15 +1,26 @@
 .home-upper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background: #5c5c5c;
   background-image: linear-gradient(to bottom right, #121226, #2d2d38);
-  width: 100%;
+  width: 85vw;
   overflow: hidden;
   font-family: 'K2D', sans-serif;
   font-weight: 600; }
+
+.top-half {
+  display: flex;
+  flex-direction: row; }
+
+.component-container {
+  height: 100vh;
+  width: 85vw;
+  position: absolute;
+  left: 85vw;
+  z-index: 3; }
 
 .home-lower {
   height: 100vh;
@@ -82,6 +93,15 @@
 
 .bottom {
   transform: translateY(-100vh);
+  transition: 1.5s;
+  transition-timing-function: cubic-bezier(1, 0.15, 1); }
+
+.left {
+  transition: 1.5s;
+  transition-timing-function: cubic-bezier(1, 0.15, 1); }
+
+.right {
+  transform: translateX(-85vw);
   transition: 1.5s;
   transition-timing-function: cubic-bezier(1, 0.15, 1); }
 

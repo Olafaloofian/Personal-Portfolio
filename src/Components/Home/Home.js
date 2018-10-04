@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import './Home.css'
 import profile from './Media/home-photo.jpg'
 import withStars from '../Tilt/TiltStar_HOC'
+import { withContext } from '../../ContextAPI/Context_HOC'
+import Articles from '../Articles/Articles';
+import Projects from '../Projects/Projects';
+import Contact from '../Contact/Contact';
 
 const skills = ['React', 'Redux', 'JavaScript', 'CSS', 'Context API', 'Node', 'Express', 'PostgreSQL', 'Cypress', 'Enzyme', 'Jest', 'Chai','SASS', 'Git', 'Redis']
 
@@ -26,6 +30,7 @@ class Home extends Component {
     }
 
     transitionToBottom = () => {
+        this.props.context.methods.toggleBottomStatus()
         this.setState({ topOrBottom: 'bottom', downArrowTransition: 'invisible' })
         setTimeout(() => {
             this.setState({upArrowTransition: ''})
@@ -33,6 +38,7 @@ class Home extends Component {
     }
 
     transitionToTop = () => {
+        this.props.context.methods.toggleBottomStatus()
         this.setState({ topOrBottom: 'top', upArrowTransition: 'invisible' })
         setTimeout(() => {
             this.setState({downArrowTransition: ''})
@@ -44,40 +50,55 @@ class Home extends Component {
     }
 
     render() {
+        console.log('------------ this.props', this.props)
         return (
             <div className='home-container'>
-            
-                <div className={`${this.state.topOrBottom} home-upper`}>
-                    <div className="flex-container">
-                        <div className='title-text'>
-                            Michael Kerr
-                            <div className="subtitle-text">
-                                Full Stack Web Developer
+
+                <div className="top-half">
+                    <div className={`${this.props.context.isAtBottom ? 'bottom' : 'top'} ${this.props.context.moveDirection} home-upper`}>
+                        <div className="flex-container">
+                            <div className='title-text'>
+                                Michael Kerr
+                                <div className="subtitle-text">
+                                    Full Stack Web Developer
+                                </div>
+                            </div>
+                        </div>
+                        <div className='flex-container flex-center'>
+                            <div className="statement-card">
+                                <div className='text'>
+                                    {this.state.skills}
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex-container flex-bottom-center">
+                            <div className={`front zoom down-arrows ${this.props.context.isAtBottom && 'invisible'}`} onClick={() => this.transitionToBottom()}>
+                                <div>
+                                    Click for More
+                                </div>
+                                <svg className="arrows">
+                                    <path d="M0 20 L30 52 L60 20"></path>
+                                    <path d="M0 40 L30 72 L60 40"></path>
+                                </svg>
                             </div>
                         </div>
                     </div>
-                    <div className='flex-container flex-center'>
-                        <div className="statement-card">
-                            <div className='text'>
-                                {this.state.skills}
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex-container flex-bottom-center">
-                        <div className={`front zoom down-arrows ${this.state.downArrowTransition}`} onClick={() => this.transitionToBottom()}>
-                            <div>
-                                Click for More
-                            </div>
-                            <svg className="arrows">
-                                <path d="M0 20 L30 52 L60 20"></path>
-                                <path d="M0 40 L30 72 L60 40"></path>
-                            </svg>
-                        </div>
+
+                    <div className={`component-container ${this.props.context.moveDirection}`}>
+                        {this.props.context.activeComponent === 'articles' && 
+                            <Articles />
+                        }
+                        {this.props.context.activeComponent === 'projects' && 
+                            <Projects />
+                        }
+                        {this.props.context.activeComponent === 'contact' && 
+                            <Contact />
+                        }
                     </div>
                 </div>
 
-                <div className={`${this.state.topOrBottom} home-lower`} ref={ re => { this.homeLower = re } }>
-                    <div className={`up-arrows zoom ${this.state.upArrowTransition}`} onClick={() => this.transitionToTop()}>
+                <div className={`${this.props.context.isAtBottom ? 'bottom' : 'top'} home-lower`} ref={ re => { this.homeLower = re } }>
+                    <div className={`up-arrows zoom ${!this.props.context.isAtBottom && 'invisible'}`} onClick={() => this.transitionToTop()}>
                         <svg className="arrows">
                             <path d="M0 30 L30 0 L60 30"></path>
                             <path d="M0 50 L30 20 L60 50"></path>
@@ -103,4 +124,4 @@ class Home extends Component {
     }
 }
 
-export default withStars(Home)
+export default withContext(withStars(Home))

@@ -1,16 +1,31 @@
 import React from 'react'
+import { timingSafeEqual } from 'crypto';
 
 export const AppContext = React.createContext()
 
 export default class ContextProvider extends React.Component {
     state = {
-        homeScrollPosition: '',
+        moveDirection: '',
+        activeComponent: 'home',
+        isAtBottom: false,
         methods: {
-            setScrollUp: () => {
-                this.setState({ homeScrollPosition: 'top' })
+            moveLateral: (direction) => {
+                if(this.state.isAtBottom) {
+                    this.setState({ moveDirection: 'up', isAtBottom: false })
+                    setTimeout( () => {
+                        this.setState({ moveDirection: direction })
+                    }, 1500)
+                } else {
+                    this.setState({ moveDirection: direction })
+                }
             },
-            setScrollDown: () => {
-                this.setState({ homeScrollPosition: 'bottom' })
+            setComponent: (name) => {
+                this.setState({ activeComponent: name })
+            },
+            toggleBottomStatus: () => {
+                this.setState( prevState => {
+                    return { isAtBottom: !prevState.isAtBottom}
+                })
             }
         }
     }
