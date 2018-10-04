@@ -8,6 +8,7 @@ export default class ContextProvider extends React.Component {
         moveDirection: '',
         activeComponent: 'home',
         isAtBottom: false,
+        fadeEffect: 'visible',
         methods: {
             moveLateral: (direction) => {
                 if(this.state.isAtBottom) {
@@ -20,7 +21,13 @@ export default class ContextProvider extends React.Component {
                 }
             },
             setComponent: (name) => {
-                this.setState({ activeComponent: name })
+                this.setState({ fadeEffect: 'invisible' })
+                setTimeout( () => {
+                    this.setState({ activeComponent: name })
+                }, 400)
+                setTimeout( () => {
+                    this.setState({ fadeEffect: 'visible' })
+                }, 800)
             },
             toggleBottomStatus: () => {
                 this.setState( prevState => {

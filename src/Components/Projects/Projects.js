@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import './Projects.css'
+import { withContext } from '../../ContextAPI/Context_HOC'
 
-export default class Projects extends Component {
+class Projects extends Component {
     render() {
         return (
-            <div>Projects</div>
+            <div className={`projects-container ${this.props.context.fadeEffect}`}>Projects</div>
         );
     }
 }
+
+export default withContext(Projects)

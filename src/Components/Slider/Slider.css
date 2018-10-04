@@ -9,7 +9,8 @@
   width: 85vw;
   overflow: hidden;
   font-family: 'K2D', sans-serif;
-  font-weight: 600; }
+  font-weight: 600;
+  position: absolute; }
 
 .top-half {
   display: flex;
@@ -18,9 +19,12 @@
 .component-container {
   height: 100vh;
   width: 85vw;
-  position: absolute;
+  position: relative;
   left: 85vw;
-  z-index: 3; }
+  z-index: 3;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #2d2d38; }
 
 .home-lower {
   height: 100vh;

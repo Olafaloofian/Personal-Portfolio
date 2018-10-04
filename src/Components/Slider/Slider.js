@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Home.css'
+import './Slider.css'
 import profile from './Media/home-photo.jpg'
 import withStars from '../Tilt/TiltStar_HOC'
 import { withContext } from '../../ContextAPI/Context_HOC'
@@ -9,7 +9,7 @@ import Contact from '../Contact/Contact';
 
 const skills = ['React', 'Redux', 'JavaScript', 'CSS', 'Context API', 'Node', 'Express', 'PostgreSQL', 'Cypress', 'Enzyme', 'Jest', 'Chai','SASS', 'Git', 'Redis']
 
-class Home extends Component {
+class Slider extends Component {
     state = {
         skills: 'React',
         topOrBottom: '',
@@ -108,4 +108,4 @@ class Home extends Component {
     }
 }
 
-export default withContext(withStars(Home))
+export default withContext(withStars(Slider))

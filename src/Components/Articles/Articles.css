@@ -1,0 +1,21 @@
+.articles-container {
+  min-height: 100vh;
+  z-index: 4;
+  width: 100%;
+  background: red;
+  padding: 2% 8% 2% 8%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.articles-head {
+  min-height: 20vh;
+  width: 100%;
+  background: pink; }
+
+.articles-list {
+  min-height: 50vh;
+  width: 100%;
+  background: blue; }

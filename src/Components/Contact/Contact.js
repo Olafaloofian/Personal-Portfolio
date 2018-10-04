@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import withStars from '../Tilt/TiltStar_HOC'
 
-export default class Contact extends Component {
+class Contact extends Component {
     render() {
         return (
             <div>Contact</div>
         );
     }
 }
+
+export default withStars(Contact)

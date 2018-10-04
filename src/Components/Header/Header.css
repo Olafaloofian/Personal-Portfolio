@@ -12,8 +12,9 @@
   padding-left: 2%;
   overflow: hidden;
   color: white;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.8vw; }
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  font-size: 1.4vw; }
 
 .navbar-flavor {
   opacity: 1;
