@@ -1,5 +1,4 @@
 import React from 'react'
-import { timingSafeEqual } from 'crypto';
 
 export const AppContext = React.createContext()
 
@@ -15,7 +14,7 @@ export default class ContextProvider extends React.Component {
                     this.setState({ moveDirection: 'up', isAtBottom: false })
                     setTimeout( () => {
                         this.setState({ moveDirection: direction })
-                    }, 1500)
+                    }, 750)
                 } else {
                     this.setState({ moveDirection: direction })
                 }

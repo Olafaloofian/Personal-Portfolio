@@ -2,23 +2,131 @@
     min-height: 100vh;
     z-index: 4;
     width: 100%;
-    background: red;
-    padding: 2% 8% 2% 8%;
+    background: linear-gradient(-45deg, rgb(27, 26, 42), rgb(27, 26, 42), rgb(107, 107, 126));
+    background-size: 400% 400%;
+    padding: 6% 6% 0 6%;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family:'Work Sans', sans-serif;
+    font-size: 1.8vw;
     align-items: center;
+    animation: Gradient 15s ease infinite;
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
 .articles-head {
     min-height: 20vh;
     width: 100%;
-    background: pink;
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(143, 158, 173), rgb(166, 181, 199),  rgb(126, 141, 156));
+    // background: rgb(166, 181, 199);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+    .title-text{
+        font-size: 3vw;
+        letter-spacing: 0.3vw;
+        margin-bottom: 3%;
+    }
+    .subtitle-text {
+        font-family: 'Domine', serif;
+        font-size: 1.6vw;
+    }
 }
 
 .articles-list {
     min-height: 50vh;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    background: blue;
+}
+
+.article {
+    box-shadow: 10px 10px 3px 0px rgba(107, 107, 126, 0.678);
+    background: white;
+    margin-bottom: 3%;
+    min-height: 10vh;
+    padding: 0 2% 1% 2%;
+    overflow: hidden;
+    font-family:'Work Sans', sans-serif;
+    .article-head {
+        width: 100%;
+        margin-top: 4%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        transition: 1s all ease-in-out;
+        .picture-frame {
+            overflow: hidden;
+            height: 0;
+            width: 20%;
+            padding-bottom: 20%;
+            img {
+                height: 14vw;
+                position: relative;
+            }
+        }
+        .title-container {
+            display: flex;
+            max-width: 70%;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    .article-body {
+        margin-top: 2%;
+        height: 0;
+        width: 100%;
+        padding: 1%;
+        transition: 1s all ease-in-out;
+        position: relative;
+        .article-text {
+            min-height: 0vh;     
+            transform-origin: top;
+            margin: 1% 6% 1% 6%;
+            display: flex;
+            flex-direction: column;
+            div:nth-child(1) {
+                width: 100%;
+                font-size: 1.4vw;
+                text-align: center;
+            }
+            p {
+                font-family: 'Domine', serif;
+                font-size: 1.26vw;
+            }
+        }
+        .horizontal-line {
+            background: rgb(18, 18, 38);
+            width: 0;
+            height: 3px;
+            margin-bottom: 4%;
+            transition: 1s all ease-in-out;
+        }
+        .animate-line {
+            width: 100%;
+            transition: 1s all ease-in-out;
+        }
+    }
+    .show {
+        height: auto;
+        transition: 1s all ease-in-out;
+    }
 }

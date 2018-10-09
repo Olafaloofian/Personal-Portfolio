@@ -11,10 +11,10 @@
   padding-right: 2%;
   padding-left: 2%;
   overflow: hidden;
-  color: white;
+  color: #838383;
   font-family: 'Work Sans', sans-serif;
   font-weight: 200;
-  font-size: 1.4vw; }
+  font-size: 1.45vw; }
 
 .navbar-flavor {
   opacity: 1;
@@ -35,9 +35,11 @@
     text-shadow: none;
     transition: all 0.2s ease-in-out; }
   .navbar-links div:hover {
+    color: white;
     transform: scale(1.09); }
 
 #glowing {
+  color: white;
   text-shadow: 0 0 0.8em lightgray, 0 0 2em white;
   transition: 0.2s all ease-in-out; }
 

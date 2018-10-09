@@ -57,7 +57,8 @@ a {
   flex-direction: row;
   width: 100vw;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #121226; }
 
 .visible {
   opacity: 1;

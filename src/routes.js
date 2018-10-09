@@ -11,8 +11,8 @@ export default (
         <Route path='/articles' component={Articles} />
         <Route path='/contact' component={Contact} />
         <Route path='/projects' component={Projects} />
-        <Route path='/' render={() => {
+        {/* <Route path='/' render={() => {
                 return <div>Page not found!</div>
-            }} />
+            }} /> */}
     </Switch>
 )
