@@ -62,8 +62,8 @@ a {
 
 .visible {
   opacity: 1;
-  transition: all 0.3s ease-in-out; }
+  transition: 0.3s ease-in-out; }
 
 .invisible {
   opacity: 0;
-  transition: all 0.3s ease-in-out; }
+  transition: 0.3s ease-in-out; }

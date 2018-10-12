@@ -1,11 +1,73 @@
 import React, { Component } from 'react';
 import './Projects.css'
 import { withContext } from '../../ContextAPI/Context_HOC'
+import ProjectList from './Projects_List'
+import { Carousel } from 'react-responsive-carousel'
+// import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 class Projects extends Component {
     render() {
         return (
-            <div className={`projects-container ${this.props.context.fadeEffect}`}>Projects</div>
+            <div className={`projects-container ${this.props.context.fadeEffect}`}>
+                <div className="projects-header">
+                    <div className='title'>PROJECTS</div>
+                    <h2>MICHAEL KERR</h2>
+                    <span>WEB DEVELOPER</span>
+                </div>
+
+                <div className="projects-body">
+                    {ProjectList.map(project => {
+                        const picDivs = project.images.map(image => {
+                            return (
+                                <div className='carousel-image' >
+                                    <img src={require(`./Media/${image}`)} alt='' />
+                                </div>
+                            )
+                        })
+                        return (
+                        <div className='project'>
+                            <div className={`carousel-box ${project.imageSize === 'large' && 'large'}`}>
+                                <Carousel
+                                    showArrows={false}
+                                    showStatus={false}
+                                    stopOnHover={true}
+                                    autoPlay={true}
+                                    showIndicators={true}
+                                    showThumbs={false}
+                                    infiniteLoop={true}
+                                    swipeable={false} 
+                                    transitionTime={420}
+                                    interval={Math.random() * (6000 - 5000) + 5000}                   
+                                >
+                                    {picDivs}
+                                </Carousel>
+                            </div>
+                            <div className="project-info">
+                                <div className="project-title">
+                                    {project.name}
+                                </div>
+                                <div className="buttons">
+                                    {project.link && 
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                        <button className='link'>
+                                            Go to Live Project
+                                        </button>
+                                    </a>}
+                                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                                        <button className="link">
+                                            View on GitHub
+                                        </button>
+                                    </a>
+                                </div>
+                                <div className="project-description">
+                                    {project.description}
+                                </div>
+                            </div>
+                        </div>
+                        )
+                    })}
+                </div>
+            </div>
         );
     }
 }

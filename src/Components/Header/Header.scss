@@ -35,7 +35,7 @@
     div {
         cursor: pointer;
         text-shadow: none;
-        transition: all 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
     }
     div:hover {
         color: white;
@@ -46,7 +46,7 @@
 #glowing {
     color: white;
     text-shadow: 0 0 0.8em rgb(211, 211, 211), 0 0 2em rgb(255, 255, 255);
-    transition: 0.2s all ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 #glowing:hover {

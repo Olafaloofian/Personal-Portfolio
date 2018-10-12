@@ -23,10 +23,10 @@ export default class ContextProvider extends React.Component {
                 this.setState({ fadeEffect: 'invisible' })
                 setTimeout( () => {
                     this.setState({ activeComponent: name })
-                }, 400)
+                }, 300)
                 setTimeout( () => {
                     this.setState({ fadeEffect: 'visible' })
-                }, 800)
+                }, 600)
             },
             toggleBottomStatus: () => {
                 this.setState( prevState => {

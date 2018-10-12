@@ -9,10 +9,7 @@ class Articles extends Component {
     }
 
     clicky = (id) => {
-        this.state.selectedArticle === id ?
-            this.setState({ selectedArticle: -1 })
-        :
-            this.setState({ selectedArticle: id })
+        this.setState({ selectedArticle: id })
     }
 
     render() {
@@ -44,7 +41,14 @@ class Articles extends Component {
                                     <div className="article-text">
                                         <div>{article.subtitle}</div>
                                         <br/>
-                                        <p>{article.body}</p>   
+                                        {article.link ? 
+                                            <a href={article.body} target='_blank' rel="noopener noreferrer"><div className='body-text centered'>{article.body}</div></a>
+                                        :
+                                            <div className="body-text">
+                                                {article.body}
+                                            </div>
+                                        }
+                                        
                                     </div>
                                 </div>   
                             </div>

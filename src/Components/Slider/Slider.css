@@ -90,7 +90,7 @@
 
 .invisible {
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.4s;
   transition-timing-function: ease-in-out; }
 
 .front {
@@ -115,7 +115,7 @@
   transition-timing-function: cubic-bezier(1, 0.15, 1); }
 
 .up-fast {
-  transition: 0.7s ease-in-out all;
+  transition: 0.7s ease-in-out;
   transition-timing-function: cubic-bezier(1, 0.15, 1); }
 
 .home-container {
@@ -190,7 +190,7 @@ figure {
     flex-direction: column; }
     .short-profile .profile-text h2 {
       text-align: center;
-      font-size: 3vh;
+      font-size: 2vw;
       margin-top: 3%; }
     .short-profile .profile-text h1 {
       text-align: center; }
@@ -215,14 +215,9 @@ figure {
   transition: 1.5s ease-out; }
 
 .vertical-divider {
-  height: 0;
+  min-height: 100%;
   width: 3px;
-  background: black;
-  transition: 1.5s ease-in-out; }
-
-.animate-height {
-  height: 56vh;
-  transition: 2s ease-out; }
+  background: black; }
 
 .about-lower {
   position: relative;
@@ -234,15 +229,15 @@ figure {
 .info-panel {
   padding: 3%;
   width: 47%;
-  font-family: 'Domine', serif; }
+  font-family: 'Open Sans', sans-serif; }
   .info-panel h3 {
-    font-size: 4vh;
+    font-size: 3.7vw;
     color: #121226;
     margin-bottom: 4%;
     text-align: center;
     font-family: 'Work Sans', sans-serif; }
   .info-panel p {
-    font-size: 2vh;
+    font-size: 20px;
     line-height: 2em;
     text-align: center; }
     .info-panel p span {
