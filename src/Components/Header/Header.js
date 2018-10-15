@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
 import { withContext } from '../../ContextAPI/Context_HOC'
 import './Header.css'
 
@@ -20,7 +19,7 @@ class Header extends Component {
     }
 
     render() {
-        console.log(window.location)
+        // console.log(window.location)
         return (
             <div className='header-container'>
                 <div className='menu-top'>

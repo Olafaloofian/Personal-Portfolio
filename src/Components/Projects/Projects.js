@@ -6,7 +6,19 @@ import { Carousel } from 'react-responsive-carousel'
 // import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 class Projects extends Component {
+    state = {
+        selectedProject: -1
+    }
+
+    setSelected = (id) => {
+        this.state.selectedProject === id ?
+            this.setState({ selectedProject: -1 })
+        :
+            this.setState({ selectedProject: id })
+    }
+
     render() {
+        // console.log('state', this.state)
         return (
             <div className={`projects-container ${this.props.context.fadeEffect}`}>
                 <div className="projects-header">
@@ -17,6 +29,7 @@ class Projects extends Component {
 
                 <div className="projects-body">
                     {ProjectList.map(project => {
+                        console.log('project', project)
                         const picDivs = project.images.map(image => {
                             return (
                                 <div className='carousel-image' >
@@ -62,6 +75,26 @@ class Projects extends Component {
                                 <div className="project-description">
                                     {project.description}
                                 </div>
+                                <div className='expandable' onClick={() => this.setSelected(project.id)}>
+                                    <div className={`arrow ${this.state.selectedProject === project.id && 'rotate'}`}>▼</div>
+                                    {this.state.selectedProject === project.id && 
+                                        <div className="technologies">
+                                            <div className="technologies-header">
+                                                Featured Technologies
+                                            </div>
+                                            <div className="technologies-container">
+                                                {project.technologies.map(tech => {
+                                                    return (
+                                                        <div className='tech'>
+                                                            {tech}
+                                                        </div>
+                                                    )
+                                                })}
+                                            </div>
+
+                                        </div>
+                                    }
+                                </div> 
                             </div>
                         </div>
                         )

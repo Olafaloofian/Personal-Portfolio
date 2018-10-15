@@ -30,9 +30,13 @@ class Contact extends Component {
                         <a href='https://www.linkedin.com/in/michaelmkerr/' target="_blank" rel="noopener noreferrer"><img src={linkit} alt="LinkedIn"/></a>
                         <a href='mailto:michael.kerr@devmounta.in'><img src={email} alt="Email"/></a>
                     </div>
+                    <div className='resume'>
+                        <a download="Michael-Kerr-Resume.pdf" target="_blank" href={resume} download>
+                            <button>DOWNLOAD RESUME</button>
+                            </a>
+                    </div>
                     <div className="contact-footer">
-                        <a download="foo.pdf" target="_blank" href={resume} download>MICHAEL KERR</a>
-                        <br/>
+                        <div className='larger-text'>MICHAEL KERR</div>
                         <div>WEB DEVELOPER</div>
                     </div>
                 </div>

@@ -20,8 +20,11 @@
     span, h2 {
         color: rgb(77, 77, 94);
         font-size: 50%;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.2em;
         text-shadow: none;
+    }
+    span {
+        margin-top: 1%;
     }
     h2 {
         margin-top: 1.5%;
@@ -56,7 +59,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        div {
+        > div {
             margin-bottom: 3%;
         }
         .project-title {
@@ -67,6 +70,51 @@
             font-family: 'Open Sans', sans-serif;
             text-align: center;
             padding: 0 5%;
+        }
+        .expandable {
+            width: 100%;
+            padding: 0 7%;
+            .arrow {
+                text-align: center;
+                cursor: pointer;
+                font-size: 2vw;
+                transform: rotate(0);
+                transition: 0.6s ease-in-out;
+            }
+            // .arrow:hover {
+            //     transform: scale(1.3);
+            //     transform: rotate(0);
+            //     transition: 0.3s;
+            // }
+            .rotate {
+                transform: rotate(180deg);
+                transition: 0.6s ease-in-out;
+            }
+            .technologies {
+                font-family: 'Open Sans', sans-serif;
+                overflow: hidden;
+                padding-top: 3%;
+                text-align: center;
+                margin-bottom: none !important;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .technologies-header {
+                    font-size: 120%;
+                }
+                .technologies-container {
+                    padding-top: 3%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    .tech {
+                        margin: 1.2% 0;
+                        width: 25%;
+                    }
+                }
+            }
         }
         .buttons {
             width: 100%;

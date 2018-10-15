@@ -1,15 +1,17 @@
 const ProjectList = [
     {
+        id: 1,
         name: 'Axxion Health',
         description: 'A hybrid e-commerce/blog website that allows users to read about and buy health-related products.',
         link: 'https://www.theaxxionlifestyle.com',
         github: 'https://github.com/Olafaloofian/Axxion-Lifestyle',
-        technologies: ['React', 'Node', 'PostgresQL', 'Express', 'Massive', 'Redux','Nodemailer', 'Stripe API', 'SASS', 'React Router'],
+        technologies: ['React', 'Node', 'PostgresQL', 'Express', 'Massive', 'Redux','Nodemailer', 'Stripe API', 'SASS', 'React Router', 'Digital Ocean'],
         images: ['Axxion_Health/home.png', 'Axxion_Health/articles.png', 'Axxion_Health/articlecategories.png', 'Axxion_Health/articlebottom.png', 'Axxion_Health/articlecomment.png',
         'Axxion_Health/productlist.png', 'Axxion_Health/finalcart.png'],
         imageSize: 'medium'
     },
     {
+        id: 2,
         name: 'Finder',
         description: 'A web app that connects applicants and recruiters with a simple, Tinder-like swiping interface.',
         link: false,
@@ -19,6 +21,7 @@ const ProjectList = [
         imageSize: 'large'
     },
     {
+        id: 3,
         name: 'Chuck Norris Jokes',
         description: "A fun project that showcases proficiency in RESTful API's and React by generating and saving random Chuck Norris jokes",
         link: false,

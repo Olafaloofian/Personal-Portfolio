@@ -18,8 +18,10 @@
   .projects-header span, .projects-header h2 {
     color: #4d4d5e;
     font-size: 50%;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
     text-shadow: none; }
+  .projects-header span {
+    margin-top: 1%; }
   .projects-header h2 {
     margin-top: 1.5%;
     font-size: 65%; }
@@ -48,7 +50,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .projects-body .project-info div {
+  .projects-body .project-info > div {
     margin-bottom: 3%; }
   .projects-body .project-info .project-title {
     font-family: 'Work Sans', sans-serif;
@@ -57,6 +59,39 @@
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     padding: 0 5%; }
+  .projects-body .project-info .expandable {
+    width: 100%;
+    padding: 0 7%; }
+    .projects-body .project-info .expandable .arrow {
+      text-align: center;
+      cursor: pointer;
+      font-size: 2vw;
+      transform: rotate(0);
+      transition: 0.6s ease-in-out; }
+    .projects-body .project-info .expandable .rotate {
+      transform: rotate(180deg);
+      transition: 0.6s ease-in-out; }
+    .projects-body .project-info .expandable .technologies {
+      font-family: 'Open Sans', sans-serif;
+      overflow: hidden;
+      padding-top: 3%;
+      text-align: center;
+      margin-bottom: none !important;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .projects-body .project-info .expandable .technologies .technologies-header {
+        font-size: 120%; }
+      .projects-body .project-info .expandable .technologies .technologies-container {
+        padding-top: 3%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+        .projects-body .project-info .expandable .technologies .technologies-container .tech {
+          margin: 1.2% 0;
+          width: 25%; }
   .projects-body .project-info .buttons {
     width: 100%;
     display: flex;

@@ -6,6 +6,8 @@ import linkedin from '../Slider/Media/linkedin.png'
 import '../Slider/Slider.css'
 
 const BottomHome = (props) => {
+    let pathToggle = false
+    
     return (
         <div className={`${props.context.isAtBottom ? 'bottom' : 'top'} ${props.context.moveDirection === 'up' ? 'up-fast' : ''} home-lower`}>
             <div className={`up-arrows zoom ${!props.context.isAtBottom && 'invisible'}`} onClick={() => props.context.methods.toggleBottomStatus()}>
