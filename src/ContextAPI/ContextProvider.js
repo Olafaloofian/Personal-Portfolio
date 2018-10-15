@@ -8,7 +8,7 @@ export default class ContextProvider extends React.Component {
         activeComponent: 'home',
         isAtBottom: false,
         fadeEffect: 'visible',
-        // Methods to control where Slider Component translates to
+        // Methods to control where Slider component translates to
         methods: {
             moveLateral: (direction) => {
                 if(this.state.isAtBottom) {

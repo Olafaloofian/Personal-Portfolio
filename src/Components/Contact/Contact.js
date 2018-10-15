@@ -5,7 +5,7 @@ import linkit from './Media/linkit.png'
 import phone from './Media/phone.png'
 import number from './Media/number.png'
 import { withContext } from '../../ContextAPI/Context_HOC'
-import resume from "./Media/Michael-Kerrs-Resume.pdf"
+import resume from './Media/Michael-Kerr-Resume.pdf'
 
 class Contact extends Component {
     state = {
@@ -31,7 +31,7 @@ class Contact extends Component {
                         <a href='mailto:michael.kerr@devmounta.in'><img src={email} alt="Email"/></a>
                     </div>
                     <div className='resume'>
-                        <a download="Michael-Kerr-Resume.pdf" target="_blank" href={resume} download>
+                        <a href={resume} target="_blank" rel="noopener noreferrer">
                             <button>DOWNLOAD RESUME</button>
                             </a>
                     </div>

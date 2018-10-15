@@ -9,7 +9,11 @@ class Header extends Component {
     }
 
     componentDidMount() {
-        this.setState({ selectedItem: 'home' })
+        const path = window.location.pathname.split('').slice(1).join('')
+        path === '' || path === 'about' ?
+            this.setState({ selectedItem: 'home' })
+        :
+            this.setState({ selectedItem: path })
     }
 
     clicky = (direction, name) => {
