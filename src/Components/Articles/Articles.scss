@@ -37,7 +37,7 @@ a {
     min-height: 20vh;
     width: 100%;
     color: white;
-    background-image: linear-gradient(to bottom right, rgb(143, 158, 173), rgb(166, 181, 199),  rgb(126, 141, 156));
+    background-image: linear-gradient(to bottom right, rgb(107, 107, 126), rgb(77, 77, 94),  rgb(107, 107, 126));
     // background: rgb(166, 181, 199);
     display: flex;
     justify-content: center;
@@ -147,4 +147,56 @@ a {
 .article:hover {
     transform: scale(1.03);
     transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+    .articles-container {
+        padding: 5% 3%;
+    }
+    .articles-head {
+        min-height: 14vh;
+        .title-text {
+            font-size: 40px;
+        }
+        .subtitle-text {
+            font-size: 18px;
+        }
+    }
+    .article {
+        box-shadow: 4px 4px 3px 0px rgba(107, 107, 126, 0.678);
+        .article-head {
+            flex-direction: column;
+            justify-content: center;
+            .title-container {
+                font-size: 16px;
+            }
+            .picture-frame {
+                margin: 0 auto;
+                position: relative;
+                width: 80%;
+                height: 120px;
+                margin-bottom: 9px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start ;
+                img {
+                    height: 100%;
+                    position: absolute;
+                    margin: 0 auto;
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+        .article-body {
+            .article-text {
+                .body-text {
+                    font-size: 13px;
+                }
+                div {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }

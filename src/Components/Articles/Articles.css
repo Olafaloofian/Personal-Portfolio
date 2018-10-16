@@ -31,7 +31,7 @@ a {
   min-height: 20vh;
   width: 100%;
   color: white;
-  background-image: linear-gradient(to bottom right, #8f9ead, #a6b5c7, #7e8d9c);
+  background-image: linear-gradient(to bottom right, #6b6b7e, #4d4d5e, #6b6b7e);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -123,3 +123,39 @@ a {
 .article:hover {
   transform: scale(1.03);
   transition: 0.3s; }
+
+@media (max-width: 600px) {
+  .articles-container {
+    padding: 5% 3%; }
+  .articles-head {
+    min-height: 14vh; }
+    .articles-head .title-text {
+      font-size: 40px; }
+    .articles-head .subtitle-text {
+      font-size: 18px; }
+  .article {
+    box-shadow: 4px 4px 3px 0px rgba(107, 107, 126, 0.678); }
+    .article .article-head {
+      flex-direction: column;
+      justify-content: center; }
+      .article .article-head .title-container {
+        font-size: 16px; }
+      .article .article-head .picture-frame {
+        margin: 0 auto;
+        position: relative;
+        width: 80%;
+        height: 120px;
+        margin-bottom: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; }
+        .article .article-head .picture-frame img {
+          height: 100%;
+          position: absolute;
+          margin: 0 auto;
+          left: 0;
+          right: 0; }
+    .article .article-body .article-text .body-text {
+      font-size: 13px; }
+    .article .article-body .article-text div {
+      font-size: 14px; } }

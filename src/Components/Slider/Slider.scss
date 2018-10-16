@@ -43,7 +43,7 @@
 .statement-card {
     margin: 0;
     display: flex;
-    z-index: 5;
+    z-index: 3;
     justify-content: center;
     align-items: center;
     letter-spacing: 0.1em;
@@ -302,6 +302,93 @@ figure {
         text-align: center;
         span {
             color: rgb(107, 107, 126);
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .home-container {
+        width: 100vw;
+    }
+    .home-upper {
+        width: 100vw;
+    }
+    .component-container {
+        width: 100vw;
+        left: 100vw;
+    }
+    .right {
+        transform: translateX(-100vw);
+    }
+    .down-arrows {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    .statement-card {
+        margin-bottom: 20%;
+        width: 75%;
+        font-size: 40px;
+    }
+    .flex-container {
+        .title-text {
+            margin-top: 4.3%;
+            img {
+                width: 15%;
+            }
+        }
+    }
+    .short-profile {
+        flex-direction: column;
+        min-height: 24%;
+        figure {
+            width: 40%;
+            padding-bottom: 40%;
+            margin-bottom: 5%;
+            margin-top: 2.5%;
+        }
+        .profile-text {
+            font-size: 210%;
+            padding: 0;
+            width: 100%;
+            h2 {
+                font-size: 80%;
+            }
+            .profile-icons {
+                justify-content: center;
+                margin-top: 4%;
+                a {
+                    width: 30%;
+                    // display: flex;
+                    // justify-content: center;s
+                    img {
+                        padding: 0 20%;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    .horizontal-divider {
+        margin-top: 5%;
+    }
+    .about-lower {
+        flex-direction: column;
+        .info-panel {
+            width: 100%;
+            h3 {
+                font-size: 190%;
+            }
+            p {
+                font-size: 130%;
+            }
+        }
+        .vertical-divider {
+            width: 100%;
+            height: 3px;
+            background: rgba(128, 128, 128, 0.623);
         }
     }
 }

@@ -78,3 +78,28 @@
       font-size: 2vw; }
     .contact .contact-footer .larger-text {
       font-size: 2.6vw; }
+
+@media (max-width: 600px) {
+  .contact-container .contact .contact-header {
+    font-size: 40px;
+    margin: 5% 0;
+    flex: none; }
+  .contact-container .contact .contact-icons {
+    flex-direction: column;
+    flex: none;
+    height: 50vh;
+    position: relative;
+    width: 33%; }
+    .contact-container .contact .contact-icons div, .contact-container .contact .contact-icons a {
+      position: relative; }
+  .contact-container .contact .resume {
+    margin-top: 5%; }
+    .contact-container .contact .resume button {
+      font-size: 10px;
+      border-radius: 17px; }
+  .contact-container .contact .contact-footer {
+    flex: none; }
+    .contact-container .contact .contact-footer .larger-text {
+      font-size: 25px; }
+    .contact-container .contact .contact-footer div {
+      font-size: 18px; } }

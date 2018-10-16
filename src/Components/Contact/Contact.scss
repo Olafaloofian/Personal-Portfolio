@@ -94,3 +94,41 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .contact-container {
+        .contact {
+            .contact-header {
+                font-size: 40px;
+                margin: 5% 0;
+                flex: none;
+            }
+            .contact-icons {
+                flex-direction: column;
+                flex: none;
+                height: 50vh;
+                position: relative;
+                width: 33%;
+                div, a {
+                    position: relative;
+                }
+            }
+            .resume {
+                margin-top: 5%;
+                button {
+                    font-size: 10px;
+                    border-radius: 17px;
+                }
+            }
+            .contact-footer {
+                flex: none;
+                .larger-text {
+                    font-size: 25px;
+                }
+                div {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

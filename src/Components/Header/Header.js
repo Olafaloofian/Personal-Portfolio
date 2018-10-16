@@ -40,27 +40,6 @@ class Header extends Component {
                         <div onClick={() => this.clicky('right', 'projects')} id={this.state.selectedItem === 'projects' && 'glowing'}>PROJECTS</div>
                         <div onClick={() => this.clicky('right', 'contact')} id={this.state.selectedItem === 'contact' && 'glowing'}>CONTACT</div>
                     </div>
-                    <div className={this.state.toggleMenu ? 'navbar-flavor hidden' : 'navbar-flavor'}>
-                        {this.state.selectedItem === 'articles' &&
-                            <div>
-                                <div>Article1</div>
-                                <div>Article2</div>
-                                <div>Article3</div>
-                            </div>
-                        }
-                        {this.state.selectedItem === 'projects' &&
-                            <div>
-                                <div>Axxion Lifestyle</div>
-                                <div>Finder</div>
-                                <div>Chuck Norris Facts</div>
-                            </div>
-                        }
-                        {this.state.selectedItem === 'contact' &&
-                            <div>
-                                Contact me, or download my resume
-                            </div>
-                        }
-                    </div>
                 </div>
             </div> 
         );

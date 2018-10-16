@@ -88,10 +88,11 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+        justify-content: space-around; }
         .projects-body .project-info .expandable .technologies .technologies-container .tech {
           margin: 1.2% 0;
-          width: 25%; }
+          min-width: 25%; }
   .projects-body .project-info .buttons {
     width: 100%;
     display: flex;
@@ -373,3 +374,36 @@
 
 .carousel:hover .slide .legend {
   opacity: 1; }
+
+@media (max-width: 600px) {
+  .projects-container {
+    padding: 4% 3%; }
+    .projects-container .projects-header {
+      text-shadow: 2px 2px #6b6b7e;
+      font-size: 40px; }
+      .projects-container .projects-header .title {
+        margin: 10px 0; }
+      .projects-container .projects-header h2, .projects-container .projects-header span {
+        display: none; }
+  .projects-body .project {
+    box-shadow: 4px 4px 3px 0px rgba(158, 158, 177, 0.678);
+    width: 100%; }
+    .projects-body .project .carousel-box {
+      width: 90%; }
+    .projects-body .project .project-info .buttons a button {
+      min-width: 75%;
+      height: 100%;
+      padding: 8%;
+      font-size: 13px; }
+    .projects-body .project .project-info .project-title {
+      font-size: 25px; }
+    .projects-body .project .project-info .project-description {
+      font-size: 16px;
+      line-height: 115%; }
+    .projects-body .project .project-info .expandable .arrow {
+      font-size: 20px; }
+    .projects-body .project .project-info .expandable .technologies .technologies-header {
+      font-size: 17px; }
+    .projects-body .project .project-info .expandable .technologies .technologies-container .tech {
+      margin: 2%;
+      font-size: 14px; } }
