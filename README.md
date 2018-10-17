@@ -2,7 +2,7 @@
 
 [Click here to visit portfolio!](https://michaelkerr.tech)
 
-###This project was built using React with an emphasis on Context API, and hosted with AWS' Lightsail.
+###This project was built using React with an emphasis on Context API and SASS/CSS. Hosting is achieved with AWS' Lightsail.
 
 ---
 
