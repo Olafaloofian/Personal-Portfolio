@@ -1,8 +1,8 @@
-#A personal portfolio website built by and for Michael Kerr.
+# A personal portfolio website built by and for Michael Kerr.
 
 [Click here to visit portfolio!](https://michaelkerr.tech)
 
-###This project was built using React with an emphasis on Context API and SASS/CSS. Hosting is achieved with AWS' Lightsail.
+### This project was built using React with an emphasis on Context API and SASS/CSS. Hosting is achieved with AWS' Lightsail.
 
 ---
 
