@@ -33,12 +33,12 @@ const BottomHome = (props) => {
             <div className="about-lower">
                 <div className="info-panel">
                     <h3>Philosophy</h3>
-                    <p><span>Innovation</span> and <span>creation</span> are the at the center of my every action. Nothing makes me happier than working on completely <span>unique</span> ways to solve a problem, and the feeling of <span>success</span> I achieve after completing an unprecedented project is the driving force in my life. I maintain a forward-facing <span>focus</span>, always thinking about the next steps I have to take to get where I want to go.</p>
+                    <p><span>Innovation</span> and <span>creation</span> are my two most important traits. Nothing makes me happier than working on completely <span>unique</span> ways to solve a problem. The feeling of <span>success</span> that comes after finishing an <span>unprecedented</span> project is the driving force in my life. I strive to maintain a forward-facing <span>focus</span>, always thinking about the next steps I should take to <span>accomplish</span> newer and greater things.</p>
                 </div>
                 <div className={`vertical-divider ${props.context.isAtBottom && 'animate-height'}`}></div>
                 <div className="info-panel">
                     <h3>About</h3>
-                    <p>After trying my hand at several different jobs, I decided to change direction and learn how to <span>code</span>. From the moment I wrote my first <span>JavaScript</span> function, I knew that I had made a good choice. I entered a programming school and learned all the ins and outs of <span>full stack web development</span> - including React, Node, and SQL. I’m ready to charge into the <span>future</span>, armed with my newly found skills and deep <span>passion</span> for coding.</p>
+                    <p>After trying my hand in several industries, I decided to learn <span>web development</span>. From the moment I wrote my first <span>JavaScript</span> function, I knew that I had made the right choice. Attending a programming school taught me all the technologies I need for <span>full stack web development</span> - including React, Node, and SQL. My <span>goal</span> is to use these new skills to help people in any way I can.</p>
                 </div>
             </div>
         </div>

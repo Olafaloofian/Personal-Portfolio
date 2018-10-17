@@ -20,20 +20,22 @@ class Contact extends Component {
                         CONTACT
                     </div>
                     <div className="contact-icons">
-                        <div>
-                        {this.state.showPhoneNumber ?
-                            <img src={number} alt="Phone Number"/>
-                        :
-                            <img src={phone} alt="Phone" onClick={() => this.setState({ showPhoneNumber: true })}/>
-                        }
+                        <div className="circles">
+                            <div>
+                            {this.state.showPhoneNumber ?
+                                <img src={number} alt="Phone Number"/>
+                            :
+                                <img src={phone} alt="Phone" onClick={() => this.setState({ showPhoneNumber: true })}/>
+                            }
+                            </div>
+                            <a href='https://www.linkedin.com/in/michaelmkerr/' target="_blank" rel="noopener noreferrer"><img src={linkit} alt="LinkedIn"/></a>
+                            <a href='mailto:michael.kerr@devmounta.in'><img src={email} alt="Email"/></a>
                         </div>
-                        <a href='https://www.linkedin.com/in/michaelmkerr/' target="_blank" rel="noopener noreferrer"><img src={linkit} alt="LinkedIn"/></a>
-                        <a href='mailto:michael.kerr@devmounta.in'><img src={email} alt="Email"/></a>
-                    </div>
-                    <div className='resume'>
-                        <a href={resume} target="_blank" rel="noopener noreferrer">
-                            <button>DOWNLOAD RESUME</button>
-                            </a>
+                        <div className='resume'>
+                            <a href={resume} target="_blank" rel="noopener noreferrer">
+                                <button>DOWNLOAD RESUME</button>
+                                </a>
+                        </div>
                     </div>
                     <div className="contact-footer">
                         <div className='larger-text'>MICHAEL KERR</div>
