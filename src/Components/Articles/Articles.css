@@ -104,7 +104,16 @@ a {
         text-align: center; }
       .article .article-body .article-text .body-text {
         font-family: 'Open Sans', sans-serif;
-        font-size: 1.26vw; }
+        line-height: 29px;
+        font-size: 19px;
+        text-align: left; }
+        .article .article-body .article-text .body-text p {
+          margin: 25px 0;
+          text-indent: 25px; }
+        .article .article-body .article-text .body-text pre {
+          background: #3f3f3f;
+          color: white;
+          font-family: monospace; }
       .article .article-body .article-text .centered {
         text-align: center; }
     .article .article-body .horizontal-line {
@@ -123,6 +132,10 @@ a {
 .article:hover {
   transform: scale(1.03);
   transition: 0.3s; }
+
+.selected:hover {
+  transform: scale(1);
+  transition: 0s; }
 
 @media (max-width: 600px) {
   .articles-container {

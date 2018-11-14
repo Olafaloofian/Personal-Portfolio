@@ -120,7 +120,18 @@ a {
             }
             .body-text {
                 font-family: 'Open Sans', sans-serif;
-                font-size: 1.26vw;
+                line-height: 29px;
+                font-size: 19px;
+                text-align: left;
+                p {
+                    margin: 25px 0;
+                    text-indent: 25px;
+                }
+                pre {
+                    background: rgb(63, 63, 63);
+                    color: white;
+                    font-family: monospace; 
+                }
             }
             .centered {
                 text-align: center;
@@ -147,6 +158,11 @@ a {
 .article:hover {
     transform: scale(1.03);
     transition: 0.3s;
+}
+
+.selected:hover {
+    transform: scale(1);
+    transition: 0s;
 }
 
 @media (max-width: 600px) {

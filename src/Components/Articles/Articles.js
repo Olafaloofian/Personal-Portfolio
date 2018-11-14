@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './Articles.css'
 import { withContext } from '../../ContextAPI/Context_HOC'
 import articlesList from './Articles_List'
+import Markdown from 'react-markdown'
+import MarkdownRenderer from '../Tools/MarkdownRenderer'
 
 class Articles extends Component {
     state = {
@@ -27,7 +29,7 @@ class Articles extends Component {
                 <div className="articles-list">
                     {articlesList.map(article => {
                         return (
-                            <div className='article' key={article.id} onClick={() => this.clicky(article.id)}>
+                            <div className={`article ${this.state.selectedArticle === article.id && 'selected'}`} key={article.id} onClick={() => this.clicky(article.id)}>
                                 <div className="article-head">
                                     <div className='picture-frame'>
                                         <img src={article.picture} alt=""/>
@@ -45,7 +47,7 @@ class Articles extends Component {
                                             <a href={article.body} target='_blank' rel="noopener noreferrer"><div className='body-text centered'>{article.body}</div></a>
                                         :
                                             <div className="body-text">
-                                                {article.body}
+                                                <MarkdownRenderer text={article.body}/>
                                             </div>
                                         }
                                         

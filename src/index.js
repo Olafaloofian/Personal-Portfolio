@@ -13,4 +13,3 @@ ReactDOM.render(
             </ContextProvider>
         </BrowserRouter>,
 document.getElementById('root'));
-

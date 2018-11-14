@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './Projects.css'
 import { withContext } from '../../ContextAPI/Context_HOC'
 import ProjectList from './Projects_List'
-import { Carousel } from 'react-responsive-carousel'
-// import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import PictureSlider from './PictureSlider'
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 class Projects extends Component {
     state = {
@@ -40,20 +40,7 @@ class Projects extends Component {
                         return (
                         <div className='project'>
                             <div className={`carousel-box ${project.imageSize === 'large' && 'large'}`}>
-                                <Carousel
-                                    showArrows={false}
-                                    showStatus={false}
-                                    stopOnHover={true}
-                                    autoPlay={true}
-                                    showIndicators={true}
-                                    showThumbs={false}
-                                    infiniteLoop={true}
-                                    swipeable={false} 
-                                    transitionTime={420}
-                                    interval={Math.random() * (6000 - 5000) + 5000}                   
-                                >
-                                    {picDivs}
-                                </Carousel>
+                                <PictureSlider pictures={picDivs} />
                             </div>
                             <div className="project-info">
                                 <div className="project-title">
