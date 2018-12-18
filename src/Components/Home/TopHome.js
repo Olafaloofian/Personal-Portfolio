@@ -3,7 +3,7 @@ import { withContext } from '../../ContextAPI/Context_HOC';
 import '../Slider/Slider.css'
 import name from '../Slider/Media/MK-Logo.png'
 
-const skills = ['Redux', 'JavaScript', 'CSS', 'Context API', 'Node', 'Express', 'PostgreSQL', 'Cypress', 'Enzyme', 'Jest', 'Chai','SASS', 'Git', 'Redis', 'React']
+const skills = ['Redux', 'JavaScript', 'CSS', 'Context API', 'Node', 'Express', 'PostgreSQL', 'Cypress', 'Enzyme', 'Jest', 'Chai','SASS', 'Git', 'Redis', 'React', 'AWS', 'Socket.io']
 
 class TopHome extends Component {
     state = {

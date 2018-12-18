@@ -53,11 +53,13 @@ class Projects extends Component {
                                             Go to Live Project
                                         </button>
                                     </a>}
+                                    {project.github &&
                                     <a href={project.github} target="_blank" rel="noopener noreferrer">
                                         <button className="link">
                                             View on GitHub
                                         </button>
                                     </a>
+                                    }
                                 </div>
                                 <div className="project-description">
                                     {project.description}

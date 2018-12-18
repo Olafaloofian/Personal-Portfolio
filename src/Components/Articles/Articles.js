@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Articles.css'
 import { withContext } from '../../ContextAPI/Context_HOC'
 import articlesList from './Articles_List'
-import Markdown from 'react-markdown'
 import MarkdownRenderer from '../Tools/MarkdownRenderer'
 
 class Articles extends Component {
