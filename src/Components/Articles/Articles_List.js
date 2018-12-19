@@ -2,7 +2,7 @@ const articlesList = [
     {
         id: 0,
         title: "Using React's Context API with a Higher Order Component",
-        subtitle: 'A step-by-step process of how to set up global state using Context API and a higher order component. Written by Michael Kerr',
+        subtitle: 'A step-by-step process of how to set up global state using Context API and a higher order component. Written by Michael Kerr.',
         picture: 'https://cdn4.iconfinder.com/data/icons/logos-3/426/react_js-512.png',
         body: 'https://blog.devmountain.com/accessing-reacts-context-api-through-a-higher-order-component/',
         link: true

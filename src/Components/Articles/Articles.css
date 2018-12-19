@@ -101,7 +101,8 @@ a {
       .article .article-body .article-text > div {
         width: 100%;
         font-size: 1.4vw;
-        text-align: center; }
+        text-align: center;
+        line-height: 140%; }
       .article .article-body .article-text .body-text {
         font-family: 'Open Sans', sans-serif;
         line-height: 29px;

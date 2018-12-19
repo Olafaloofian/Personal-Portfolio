@@ -34,7 +34,7 @@ const ProjectList = [
         id: 3,
         name: 'Chuck Norris Jokes',
         description: "A fun project that showcases proficiency in RESTful API's and React by generating and saving random Chuck Norris jokes",
-        link: false,
+        link: 'https://chucknorrisjokes.now.sh',
         github: 'https://github.com/Olafaloofian/Chuck-Norris-Jokes',
         technologies: ['React', 'Node', 'Express', "RESTful API's", 'CSS'],
         images: ['Chuck_Norris/home.png'],
