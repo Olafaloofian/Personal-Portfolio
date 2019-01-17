@@ -2,29 +2,39 @@ import React, { Component } from 'react';
 import { withContext } from '../../ContextAPI/Context_HOC';
 import '../Slider/Slider.css'
 import name from '../Slider/Media/MK-Logo.png'
+import { TimelineLite } from 'gsap'
 
 const skills = ['Redux', 'JavaScript', 'CSS', 'Context API', 'Node', 'Express', 'PostgreSQL', 'Cypress', 'Enzyme', 'Jest', 'Chai','SASS', 'Git', 'Redis', 'React', 'AWS', 'Socket.io']
 
 class TopHome extends Component {
-    state = {
-        skills: 'React',
-        transitionClass: '',
+    constructor() {
+        super()
+        this.state = {
+            skills: 'React'
+        }
+        this.element = null
+        this.myTween = new TimelineLite({paused: true})
     }
 
     componentDidMount() {
-        this.skillSwitch = setInterval(this.switchSkill, 2500)
+        this.myTween.set(this.element, { autoAlpha: 0 })
+        .to(this.element, 0.8, { autoAlpha: 1 })
+        .to(this.element, 0.4, { autoAlpha: 1 })
+        .to(this.element, 0.8, { autoAlpha: 0 })
+        this.myTween.play()
+        this.skillFade = setInterval(() => { this.myTween.restart(); this.switchSkill() }, 2000)
     }
 
     switchSkill = () => {
         let index = skills.indexOf(this.state.skills)
         skills.length === index + 1 ?
-            this.setState({skills: skills[0], transitionClass: 'text'})
+            this.setState({skills: skills[0]})
         :
             this.setState({skills: skills[index + 1]})
     }
 
     componentWillUnmount() {
-        clearInterval(this.skillSwitch)
+        clearInterval(this.skillFade)
     }
 
     render() {
@@ -37,7 +47,7 @@ class TopHome extends Component {
                 </div>
                 <div className='flex-container flex-center'>
                     <div className="statement-card">
-                        <div className={this.state.transitionClass}>
+                        <div ref={ thisDiv => this.element = thisDiv }>
                             {this.state.skills}
                         </div>
                     </div>
