@@ -29,7 +29,7 @@ class Contact extends Component {
                             }
                             </div>
                             <a href='https://www.linkedin.com/in/michaelmkerr/' target="_blank" rel="noopener noreferrer"><img src={linkit} alt="LinkedIn"/></a>
-                            <a href='mailto:michael.kerr@devmounta.in'><img src={email} alt="Email"/></a>
+                            <a href='mailto:bulluffalo@gmail.com'><img src={email} alt="Email"/></a>
                         </div>
                         <div className='resume'>
                             <a href={resume} target="_blank" rel="noopener noreferrer">
