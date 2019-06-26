@@ -1,6 +1,7 @@
 import React from 'react';
 import { withContext } from '../../ContextAPI/Context_HOC'
 import profile from '../Slider/Media/home-photo.jpg'
+import image from '../Slider/Media/profile-photo.jpg'
 import github from '../Slider/Media/github.png'
 import linkedin from '../Slider/Media/linkedin.png'
 import '../Slider/Slider.css'
@@ -16,7 +17,7 @@ const BottomHome = (props) => {
             </div>
             <div className='short-profile'>
                 <figure>
-                    <img src={profile} alt="Profile"/>
+                    <img src={image} alt="Profile"/>
                 </figure>
                 <div className="profile-text">
                     <h1>MICHAEL KERR</h1>
@@ -31,12 +32,12 @@ const BottomHome = (props) => {
             <div className="about-lower">
                 <div className="info-panel">
                     <h3>Philosophy</h3>
-                    <p><span>Innovation</span> and <span>creation</span> are my two most important traits. Nothing makes me happier than working on completely <span>unique</span> ways to solve a problem. The feeling of <span>success</span> that comes after finishing an <span>unprecedented</span> project is the driving force in my life. I strive to maintain a forward-facing <span>focus</span>, always thinking about the next steps I should take to <span>accomplish</span> newer and greater things.</p>
+                    <p>There is no feeling more <span>intensely pure</span> than crafting the <span>perfect solution</span> to a problem. <span>Innovation</span> and <span>discovery</span> are essential pieces of any <span>revolutionary change</span>, on whatever the scale that change may be. <span>Uniqueness</span> should not be sacrificed in favor of practicality or efficiency until an <span>honest</span> attempt is made. A <span>forward-facing focus</span> on success ensures <span>unrivaled accomplishment</span>.</p>
                 </div>
                 <div className={`vertical-divider ${props.context.isAtBottom && 'animate-height'}`}></div>
                 <div className="info-panel">
                     <h3>About</h3>
-                    <p>After trying my hand in several industries, I decided to learn <span>web development</span>. From the moment I wrote my first <span>JavaScript</span> function, I knew that I had made the right choice. Attending a programming school taught me all the technologies I need for <span>full stack web development</span> - including React, Node, and SQL. My <span>goal</span> is to use these new skills to help people in any way I can.</p>
+                    <p>From a young age, I've always felt a calling to <span>create</span> and <span>explore</span>. These internal forces combined with a mindset of <span>thoughtful precision</span> eventually led me to programming. Currently, I work as a <span>software engineer</span> for worldwide company Cubic. Our small team performs <span>web development</span> from a remote position in Arizona. With every day that passes, I'm trying to <span>improve</span> the world through my <span>ideas</span> and <span>code</span>.</p>
                 </div>
             </div>
         </div>
