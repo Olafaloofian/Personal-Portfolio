@@ -49,8 +49,8 @@
     letter-spacing: 0.1em;
     height: 23vh;
     width: 40%;
-    background: rgba(77, 77, 94, 0.678);
-    box-shadow: 0px 0px 10px 10px rgba(77, 77, 94, 0.678);
+    background: rgba(77, 77, 94, 0.774);
+    box-shadow: 0px 0px 10px 10px rgba(28, 28, 39, 0.87);
     font-size: 300%;
     color: white;
 }
@@ -193,10 +193,9 @@ figure {
     position: relative;
     box-shadow: 0px 0px 10px 5px rgba(27, 26, 42, 0.678);
     img {
-        width: 166%;
+        width: 100%;
         height: auto;
         position: relative;
-        right: 33%;
     }
 }
 

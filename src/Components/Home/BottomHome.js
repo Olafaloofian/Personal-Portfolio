@@ -21,7 +21,7 @@ const BottomHome = (props) => {
                 </figure>
                 <div className="profile-text">
                     <h1>MICHAEL KERR</h1>
-                    <h2>WEB DEVELOPER</h2>
+                    <h2>ARTIST | ENGINEER</h2>
                     <div className="profile-icons">
                         <a href='https://github.com/Olafaloofian' target="_blank" rel="noopener noreferrer"><img className='zoom' src={github} alt=""/></a>
                         <a href='https://www.linkedin.com/in/michaelmkerr/' target="_blank" rel="noopener noreferrer"><img className='zoom' src={linkedin} alt=""/></a>
@@ -32,12 +32,12 @@ const BottomHome = (props) => {
             <div className="about-lower">
                 <div className="info-panel">
                     <h3>Philosophy</h3>
-                    <p>There is no feeling more <span>intensely pure</span> than crafting the <span>perfect solution</span> to a problem. <span>Innovation</span> and <span>discovery</span> are essential pieces of any <span>revolutionary change</span>, on whatever the scale that change may be. <span>Uniqueness</span> should not be sacrificed in favor of practicality or efficiency until an <span>honest</span> attempt is made. A <span>forward-facing focus</span> on success ensures <span>unrivaled accomplishment</span>.</p>
+                    <p>There is a beautiful <span>realm</span> that exists within the convergence of <span>art</span> and <span>engineering</span>. Finding this intersection is the key to unlocking <span>world-changing ideas</span> and <span>solutions</span>. While each of us has the <span>ability</span> to alter reality, our progress as a species is driven fastest when we <span>group together</span> and use our power for a <span>common goal</span>.</p>
                 </div>
                 <div className={`vertical-divider ${props.context.isAtBottom && 'animate-height'}`}></div>
                 <div className="info-panel">
                     <h3>About</h3>
-                    <p>From a young age, I've always felt a calling to <span>create</span> and <span>explore</span>. These internal forces combined with a mindset of <span>thoughtful precision</span> eventually led me to programming. Currently, I work as a <span>software engineer</span> for worldwide company Cubic. Our small team performs <span>web development</span> from a remote position in Arizona. With every day that passes, I'm trying to <span>improve</span> the world through my <span>ideas</span> and <span>code</span>.</p>
+                    <p>From a young age, I've always felt a calling to <span>create</span> and <span>explore</span>. Currently, I work as a <span>co-founder and designer</span> for a technical consulting company named <span>PHX Devs</span>. Our small team performs <span>web, mobile, server, database, and IoT development</span> in Phoenix, Arizona. With every day that passes, I'm trying to <span>improve</span> the world through my <span>ideas</span> and <span>designs</span>.</p>
                 </div>
             </div>
         </div>

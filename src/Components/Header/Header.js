@@ -36,7 +36,7 @@ class Header extends Component {
                 <div className='menu-bottom'>
                     <div className={this.state.toggleMenu ? 'navbar-links' : 'navbar-links hidden'}>
                         <div onClick={() => this.clicky('left', 'home')} id={(this.state.selectedItem === 'home' && 'glowing').toString()}>HOME</div>
-                        <div onClick={() => this.clicky('right', 'articles')} id={(this.state.selectedItem === 'articles' && 'glowing').toString()}>ARTICLES</div>
+                        {/* <div onClick={() => this.clicky('right', 'articles')} id={(this.state.selectedItem === 'articles' && 'glowing').toString()}>ARTICLES</div> */}
                         <div onClick={() => this.clicky('right', 'projects')} id={(this.state.selectedItem === 'projects' && 'glowing').toString()}>PROJECTS</div>
                         <div onClick={() => this.clicky('right', 'contact')} id={(this.state.selectedItem === 'contact' && 'glowing').toString()}>CONTACT</div>
                     </div>

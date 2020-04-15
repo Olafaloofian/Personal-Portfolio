@@ -8,7 +8,7 @@ import Projects from './Components/Projects/Projects'
 export default (
     <Switch>
         <Route exact path='/' component={Slider} />
-        <Route path='/articles' component={Articles} />
+        {/* <Route path='/articles' component={Articles} /> */}
         <Route path='/contact' component={Contact} />
         <Route path='/projects' component={Projects} />
         {/* <Route path='/' render={() => {

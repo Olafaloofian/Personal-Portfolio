@@ -10,8 +10,9 @@ function Projects(props) {
         <div className={`projects-container ${props.context.fadeEffect}`}>
             <div className="projects-header">
                 <div className='title'>PROJECTS</div>
+                <div style={{height: 30}}></div>
                 <h2>MICHAEL KERR</h2>
-                <span>WEB DEVELOPER</span>
+                <span>ARTIST | ENGINEER</span>
             </div>
 
             <div className="projects-body">

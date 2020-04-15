@@ -39,7 +39,7 @@ class Contact extends Component {
                     </div>
                     <div className="contact-footer">
                         <div className='larger-text'>MICHAEL KERR</div>
-                        <div>WEB DEVELOPER</div>
+                        <div>ARTIST | ENGINEER</div>
                     </div>
                 </div>
             </div>

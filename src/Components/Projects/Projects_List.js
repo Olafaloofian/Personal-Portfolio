@@ -10,6 +10,26 @@ const ProjectList = [
         imageSize: 'medium'
     },
     {
+        id: 10,
+        name: 'Axxion.org',
+        description: 'A long-running personal project that seeks to push the boundaries of human perception through commerce, music, cinematography, and design. Our species is ready to take the next leap forward, and Axxion will be there to facilitate the jump when the time comes.',
+        link: 'https://www.axxion.org',
+        github: false,
+        technologies: ['React', 'Context API','Nodemailer', 'Stripe API', 'SASS', 'React Router', 'AWS'],
+        images: ['Axxion/home.png', 'Axxion/store.png', 'Axxion/about.png', 'Axxion/contact.png'],
+        imageSize: 'medium'
+    },
+    {
+        id: 11,
+        name: 'Patient 31',
+        description: 'A social distancing mobile app designed during the COVID-19 pandemic. Simple counting and history screens help keep track of how many people are interacted with on a daily basis. This was a humanity driven development project, released for free and constructed under donated time.',
+        link: false,
+        github: false,
+        technologies: ['ReactNative', 'Figma'],
+        images: ['Patient31/home1.png', 'Patient31/home2.png', 'Patient31/statistics.png', 'Patient31/info.png'],
+        imageSize: 'large'
+    },
+    {
         id: 8,
         name: 'MotionDSP Subscription',
         description: 'The MotionDSP software subscription portal - giving you access to industry leading tools for advanced image processing and computer vision software for public safety, security, government, and defense applications.',
@@ -23,7 +43,7 @@ const ProjectList = [
         id: 7,
         name: 'Sydney Eliza Florals',
         description: 'A full-featured web application for the best florist around - Sydney Kerr.',
-        link: 'https://sydneyelizaflorals.com/',
+        link: false,
         github: 'https://github.com/Olafaloofian/Creative-Success',
         technologies: ['React', 'Node', 'PostgreSQL', 'Express', 'Massive', 'GraphQL', 'Nodemailer', 'Multer', 'Context API', 'React Router', 'SASS', 'Bcrypt', 'Express Sessions'],
         images: ['SydneyElizaFlorals/Home.png', 'SydneyElizaFlorals/About.png', 'SydneyElizaFlorals/Contact.png', 'SydneyElizaFlorals/Portfolio.png', 'SydneyElizaFlorals/PortfolioItem.png', 'SydneyElizaFlorals/Login.png'],
@@ -40,16 +60,6 @@ const ProjectList = [
         imageSize: 'medium'
     },
     {
-        id: 4,
-        name: 'DevMountain Student Tracker',
-        description: 'An online tool for students and staff at DevMountain. This app keeps track of assignments completed and overall course progress.',
-        link: 'https://devmountain-tracker.com',
-        github: false,
-        technologies: ['React', 'Node', 'PostgreSQL', 'Express', 'Massive', 'Context API', 'Enzyme', 'React Router', 'SASS', 'Bcrypt', 'Express Sessions', 'ChartJS'],
-        images: ['DevMountain_Tracker/addcompetency.png', 'DevMountain_Tracker/competencies.png', 'DevMountain_Tracker/staff.png', 'DevMountain_Tracker/dashboard.png','DevMountain_Tracker/studentcompetencies.png'],
-        imageSize: 'medium'
-    },
-    {
         id: 6,
         name: 'Cornerstone Manor Apartments',
         description: 'A simple, stylish website for Cornerstone Manor apartments in Mesa, Arizona.',
@@ -60,16 +70,26 @@ const ProjectList = [
         imageSize: 'medium'
     },
     {
-        id: 1,
-        name: 'Axxion Health',
-        description: 'A hybrid e-commerce/blog website that allows users to read about and buy health-related products.',
-        link: 'https://www.theaxxionlifestyle.com',
-        github: 'https://github.com/Olafaloofian/Axxion-Lifestyle',
-        technologies: ['React', 'Node', 'PostgreSQL', 'Express', 'Massive', 'Redux','Nodemailer', 'Stripe API', 'SASS', 'React Router', 'Digital Ocean'],
-        images: ['Axxion_Health/home.png', 'Axxion_Health/articles.png', 'Axxion_Health/articlecategories.png', 'Axxion_Health/articlebottom.png', 'Axxion_Health/articlecomment.png',
-        'Axxion_Health/productlist.png', 'Axxion_Health/finalcart.png'],
+        id: 4,
+        name: 'DevMountain Student Tracker',
+        description: 'An online tool for students and staff at DevMountain. This app keeps track of assignments completed and overall course progress.',
+        link: false,
+        github: false,
+        technologies: ['React', 'Node', 'PostgreSQL', 'Express', 'Massive', 'Context API', 'Enzyme', 'React Router', 'SASS', 'Bcrypt', 'Express Sessions', 'ChartJS'],
+        images: ['DevMountain_Tracker/addcompetency.png', 'DevMountain_Tracker/competencies.png', 'DevMountain_Tracker/staff.png', 'DevMountain_Tracker/dashboard.png','DevMountain_Tracker/studentcompetencies.png'],
         imageSize: 'medium'
     },
+    // {
+    //     id: 1,
+    //     name: 'Axxion Health',
+    //     description: 'A hybrid e-commerce/blog website that allows users to read about and buy health-related products.',
+    //     link: 'https://www.theaxxionlifestyle.com',
+    //     github: 'https://github.com/Olafaloofian/Axxion-Lifestyle',
+    //     technologies: ['React', 'Node', 'PostgreSQL', 'Express', 'Massive', 'Redux','Nodemailer', 'Stripe API', 'SASS', 'React Router', 'Digital Ocean'],
+    //     images: ['Axxion_Health/home.png', 'Axxion_Health/articles.png', 'Axxion_Health/articlecategories.png', 'Axxion_Health/articlebottom.png', 'Axxion_Health/articlecomment.png',
+    //     'Axxion_Health/productlist.png', 'Axxion_Health/finalcart.png'],
+    //     imageSize: 'medium'
+    // },
     // {
     //     id: 2,
     //     name: 'Finder',
