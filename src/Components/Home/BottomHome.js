@@ -21,7 +21,7 @@ const BottomHome = (props) => {
                 </figure>
                 <div className="profile-text">
                     <h1>MICHAEL KERR</h1>
-                    <h2>ARTIST | ENGINEER</h2>
+                    <h2>SOFTWARE DEVELOPER</h2>
                     <div className="profile-icons">
                         <a href='https://github.com/Olafaloofian' target="_blank" rel="noopener noreferrer"><img className='zoom' src={github} alt=""/></a>
                         <a href='https://www.linkedin.com/in/michaelmkerr/' target="_blank" rel="noopener noreferrer"><img className='zoom' src={linkedin} alt=""/></a>
@@ -32,12 +32,13 @@ const BottomHome = (props) => {
             <div className="about-lower">
                 <div className="info-panel">
                     <h3>Philosophy</h3>
-                    <p>There is a beautiful <span>realm</span> that exists within the convergence of <span>art</span> and <span>engineering</span>. Finding this intersection is the key to unlocking <span>world-changing ideas</span> and <span>solutions</span>. While each of us has the <span>ability</span> to alter reality, our progress as a species is driven fastest when we <span>group together</span> and use our power for a <span>common goal</span>.</p>
+                    <p>Creating new <span>solutions</span> unlocks a certain <span>nirvana</span> for me. I love <span>collaborating</span> with people in this same <span>wavelength</span> and helping others <span>find their way</span> along this path.
+                    Each of us possess unique <span>abilities</span>, and our progress as a species is driven fastest when we <span>help each opher</span> and use our power for a <span>common goal</span>.</p>
                 </div>
                 <div className={`vertical-divider ${props.context.isAtBottom && 'animate-height'}`}></div>
                 <div className="info-panel">
                     <h3>About</h3>
-                    <p>From a young age, I've always felt a calling to <span>create</span> and <span>explore</span>. Currently, I work as a <span>co-founder and designer</span> for a technical consulting company named <span>PHX Devs</span>. Our small team performs <span>web, mobile, server, database, and IoT development</span> in Phoenix, Arizona. With every day that passes, I'm trying to <span>improve</span> the world through my <span>ideas</span> and <span>designs</span>.</p>
+                    <p>Currently, I work as a <span>lead instructor</span> partnering with <span>universities</span> that offer software development <span>courses</span>. I also contract at <span>Life360</span> as a Marketing Communications Developer. With every day that passes, I'm trying to <span>improve</span> the world through my <span>ideas</span> and <span>designs</span>.</p>
                 </div>
             </div>
         </div>

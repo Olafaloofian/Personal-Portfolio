@@ -4,7 +4,7 @@ import '../Slider/Slider.css'
 import name from '../Slider/Media/MK-Logo.png'
 import { TimelineLite } from 'gsap'
 
-const skills = ['Figma', 'Python', 'Inkscape', 'JavaScript', 'AdobeXD', 'React Native', 'GraphQL', 'Affinity Photo', 'CSS', 'Node', 'SQL', 'Flask', 'Wordpress', 'WebRTC', 'CentOS', 'Jest', 'Git', 'React', 'Stripe', 'Ubuntu', 'Jenkins', 'AWS', 'Bash'] 
+const skills = ['Redis', 'Apache', 'Nginx', 'Figma', 'Python', 'Inkscape', 'JavaScript', 'AdobeXD', 'React Native', 'GraphQL', 'Affinity Photo', 'MongoDB', 'CSS', 'Node', 'SQL', 'Flask', 'Wordpress', 'WebRTC', 'CentOS', 'Jest', 'Git', 'React', 'Stripe', 'Ubuntu', 'Jenkins', 'AWS', 'Bash'] 
 
 class TopHome extends Component {
     constructor() {

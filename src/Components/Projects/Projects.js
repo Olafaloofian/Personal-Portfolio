@@ -12,7 +12,7 @@ function Projects(props) {
                 <div className='title'>PROJECTS</div>
                 <div style={{height: 30}}></div>
                 <h2>MICHAEL KERR</h2>
-                <span>ARTIST | ENGINEER</span>
+                <span>SOFTWARE DEVELOPER</span>
             </div>
 
             <div className="projects-body">
