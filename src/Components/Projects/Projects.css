@@ -59,6 +59,8 @@
   .projects-body .project-info .project-description {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+    font-size: 18px;
+    line-height: 1.5em;
     padding: 0 5%; }
   .projects-body .project-info .expandable {
     width: 100%;
@@ -83,7 +85,8 @@
       flex-direction: column;
       justify-content: center; }
       .projects-body .project-info .expandable .technologies .technologies-header {
-        font-size: 120%; }
+        font-size: 120%;
+      font-weight: 600; }
       .projects-body .project-info .expandable .technologies .technologies-container {
         padding-top: 3%;
         width: 100%;

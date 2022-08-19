@@ -30,7 +30,7 @@
     transition: 0.3s; }
 
 .contact {
-  overflow: scroll;
+  overflow: hidden;
   background: white;
   height: 100%;
   width: 100%;

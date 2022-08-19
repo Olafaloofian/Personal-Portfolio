@@ -1,5 +1,15 @@
 const ProjectList = [
     {
+        id: 15,
+        name: 'Life360',
+        description: 'Responsible for coding/developing marketing communications and campaigns - including email, in-app messaging, and push notifications.',
+        link: 'https://life360.onelink.me/030b/b7a9bc26',
+        github: false,
+        technologies: ['Braze', 'Liquid', 'HTML'],
+        images: ['Life360/Home.jpg'],
+        imageSize: 'large'
+    },
+    {
         id: 9,
         name: 'Unified Video',
         description: 'Extensive backend work creating and maintaining the API used by Unified Video and other front-end user interfaces.',
@@ -10,9 +20,29 @@ const ProjectList = [
         imageSize: 'medium'
     },
     {
+        id: 14,
+        name: 'MetaGig',
+        description: 'An upcoming event-based application designed to help junior developers prove their skills and land their dream jobs.',
+        link: 'https://metagig.app/',
+        github: false,
+        technologies: ['Node', "PostgreSQL", "Nodemailer", "ThreeJS", "React"],
+        images: ['MetaGig/Home.png'],
+        imageSize: 'medium'
+    },
+    {
+        id: 12,
+        name: 'Giddyapp',
+        description: "Bet money. Race Horses. WIN!!! A browser game showcasing the power of plain ol' JavaScript.",
+        link: 'https://olafaloofian.github.io/Giddyapp/?show_tutorial=true',
+        github: 'https://github.com/Olafaloofian/Giddyapp',
+        technologies: ['JavaScript', 'HTML', 'CSS'],
+        images: ['Giddyapp/Giddyapp_1.png', 'Giddyapp/Giddyapp_2.png', 'Giddyapp/Giddyapp_3.png', 'Giddyapp/Giddyapp_5.png', 'Giddyapp/Giddyapp_4.png'],
+        imageSize: 'medium'
+    },
+    {
         id: 10,
         name: 'Axxion.org',
-        description: 'A long-running personal project that seeks to push the boundaries of human perception through commerce, music, cinematography, and design. Our species is ready to take the next leap forward, and Axxion will be there to facilitate the jump when the time comes.',
+        description: 'A long-running personal project that seeks to push the boundaries of human perception through commerce, music, cinematography, and design. This app is a portal to the commerce side of Axxion.',
         link: 'https://www.axxion.org',
         github: false,
         technologies: ['React', 'Context API','Nodemailer', 'Stripe API', 'SASS', 'React Router', 'AWS'],
@@ -28,6 +58,16 @@ const ProjectList = [
         technologies: ['ReactNative', 'Figma'],
         images: ['Patient31/home1.png', 'Patient31/home2.png', 'Patient31/statistics.png', 'Patient31/info.png'],
         imageSize: 'large'
+    },
+    {
+        id: 13,
+        name: 'FairStartSystem',
+        description: 'A companion app for a custom-programmed, arduino-controlled, servo-operated drone racing start box. Also available in desktop and mobile apps!',
+        link: 'https://fairstartsystem.axxion.org/about',
+        github: false,
+        technologies: ['JavaScript', 'HTML', 'CSS', 'Python', 'C++'],
+        images: ['FairStartSystem/Home.png', 'FairStartSystem/About.png', 'FairStartSystem/Help.png'],
+        imageSize: 'medium'
     },
     {
         id: 8,
