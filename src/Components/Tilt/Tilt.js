@@ -13,7 +13,7 @@ export default class Tilt extends React.Component {
     render() {
         return (
             <div className='tilt-wrapper'>
-                <div id='stars2'></div>                
+                <div id='stars2'></div>
                 <div ref={node => (this.rootNode = node)} className="tilter" >
                     <div id='stars3'></div>
                     <div id='stars'></div>

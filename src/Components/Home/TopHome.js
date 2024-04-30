@@ -4,7 +4,7 @@ import '../Slider/Slider.css'
 import name from '../Slider/Media/MK-Logo.png'
 import { TimelineLite } from 'gsap'
 
-const skills = ['Redis', 'Apache', 'Nginx', 'Figma', 'Python', 'Inkscape', 'JavaScript', 'AdobeXD', 'React Native', 'GraphQL', 'Affinity Photo', 'MongoDB', 'CSS', 'Node', 'SQL', 'Flask', 'Wordpress', 'WebRTC', 'CentOS', 'Jest', 'Git', 'React', 'Stripe', 'Ubuntu', 'Jenkins', 'AWS', 'Bash'] 
+const skills = ['Redis', 'Braze', 'Apache', 'Nginx', 'C++', 'Figma', 'Python', 'Inkscape', 'JavaScript', 'AdobeXD', 'React Native', 'GraphQL', 'Blender', 'MongoDB', 'CSS', 'Node', 'SQL', 'Flask', 'Wordpress', 'GTM', 'WebRTC', 'CentOS', 'Jest', 'Git', 'React', 'Stripe', 'Ubuntu', 'Jenkins', 'AWS', 'Bash']
 
 class TopHome extends Component {
     constructor() {
@@ -22,7 +22,7 @@ class TopHome extends Component {
         .to(this.element, 0.4, { autoAlpha: 1 })
         .to(this.element, 0.8, { autoAlpha: 0 })
         this.myTween.play()
-        this.skillFade = setInterval(() => { this.myTween.restart(); this.switchSkill() }, 2000)
+        this.skillFade = setInterval(() => { this.myTween.restart(); this.switchSkill() }, 1100)
     }
 
     switchSkill = () => {

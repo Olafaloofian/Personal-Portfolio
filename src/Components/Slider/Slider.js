@@ -16,13 +16,13 @@ const Slider = (props) => {
                 <TopHome />
 
                 <div className={`component-container ${props.context.moveDirection}`}>
-                    {props.context.activeComponent === 'articles' && 
+                    {props.context.activeComponent === 'articles' &&
                         <Articles />
                     }
-                    {props.context.activeComponent === 'projects' && 
+                    {props.context.activeComponent === 'projects' &&
                         <Projects />
                     }
-                    {props.context.activeComponent === 'contact' && 
+                    {props.context.activeComponent === 'contact' &&
                         <Contact />
                     }
                 </div>

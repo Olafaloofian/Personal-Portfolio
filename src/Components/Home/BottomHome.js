@@ -21,7 +21,7 @@ const BottomHome = (props) => {
                 </figure>
                 <div className="profile-text">
                     <h1>MICHAEL KERR</h1>
-                    <h2>SOFTWARE DEVELOPER</h2>
+                    <h2>SOFTWARE ENGINEER</h2>
                     <div className="profile-icons">
                         <a href='https://github.com/Olafaloofian' target="_blank" rel="noopener noreferrer"><img className='zoom' src={github} alt=""/></a>
                         <a href='https://www.linkedin.com/in/michaelmkerr/' target="_blank" rel="noopener noreferrer"><img className='zoom' src={linkedin} alt=""/></a>
@@ -32,13 +32,13 @@ const BottomHome = (props) => {
             <div className="about-lower">
                 <div className="info-panel">
                     <h3>Philosophy</h3>
-                    <p>Creating new <span>solutions</span> unlocks a certain <span>nirvana</span> for me. I love <span>collaborating</span> with people in this same <span>wavelength</span> and helping others <span>find their way</span> along this path.
-                    Each of us possess unique <span>abilities</span>, and our progress as a species is driven fastest when we <span>help each opher</span> and use our power for a <span>common goal</span>.</p>
+                    <p>Crafting custom <span>solutions</span> unlocks a special <span>nirvana</span> for me. I love <span>collaborating</span> with people in this same <span>wavelength</span> and helping others <span>find their way</span> along this path.
+                    Each of us possess unique <span>abilities</span>, and our collective progress is driven fastest when we selflessly <span>help&nbsp;each&nbsp;eachother</span>.</p>
                 </div>
                 <div className={`vertical-divider ${props.context.isAtBottom && 'animate-height'}`}></div>
                 <div className="info-panel">
                     <h3>About</h3>
-                    <p>Currently, I work as a <span>lead instructor</span> partnering with <span>universities</span> that offer software development <span>courses</span>. I also contract at <span>Life360</span> as a Marketing Communications Developer. With every day that passes, I'm trying to <span>improve</span> the world through my <span>ideas</span> and <span>designs</span>.</p>
+                    <p>Currently, I work as a <span>lead instructor</span> partnering with <span>universities</span> that offer software development <span>courses</span>. I also work at <span>Life360/Tile/Jiobit</span> as a Lifecycle Marketing  Developer. With every day that passes, I'm trying to <span>improve</span> the world through my <span>ideas</span>, <span>designs</span>, and <span>code</span>.</p>
                 </div>
             </div>
         </div>

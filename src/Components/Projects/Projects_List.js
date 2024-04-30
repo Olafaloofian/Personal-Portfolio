@@ -1,11 +1,21 @@
 const ProjectList = [
     {
+        id: 16,
+        name: 'Tile',
+        description: 'Responsible for coding/developing marketing communications and campaigns - including email, in-app messaging, and push notifications.',
+        link: 'https://www.tile.com',
+        github: false,
+        technologies: ['Braze', 'Liquid', 'HTML', 'Javascript', 'Python', 'Email Development'],
+        images: ['Tile/Modal.jpg'],
+        imageSize: 'medium'
+    },
+    {
         id: 15,
         name: 'Life360',
-        description: 'Responsible for coding/developing marketing communications and campaigns - including email, in-app messaging, and push notifications.',
+        description: 'Created and deployed countless marketing assets across different app and web channels.',
         link: 'https://life360.onelink.me/030b/b7a9bc26',
         github: false,
-        technologies: ['Braze', 'Liquid', 'HTML'],
+        technologies: ['Braze', 'Liquid', 'HTML', 'Javascript', 'Python', 'Email Development'],
         images: ['Life360/Home.jpg'],
         imageSize: 'large'
     },
